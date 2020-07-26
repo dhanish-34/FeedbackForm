@@ -1,0 +1,110 @@
+<!doctype=html>
+<html>
+    <head>
+        <title>Online Feedback Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <style>
+            body
+            {
+                background-repeat: repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    
+    <body style="background-image: url(bg-01.jpg)">
+        <div class="jumbotron-fluid">
+            <center>
+                <img src="logo.jpg">
+            </center>
+        </div>
+        <br>
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <article class="card-body">
+                            <a href="studentsignup.jsp?" class="float-right btn btn-outline-primary">Sign up</a>
+                                <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                                <h2>STUDENT LOGIN</h2>
+                                    <form name="studentfeedback" action="studentlogin.jsp?t=1" onsubmit="return fun3()" method="post">
+                                        <div class="form-group">
+                                            <label>Your Roll No</label>
+                                                <input name="ROLLNO" class="form-control" placeholder="Roll No" value="" type=text>
+                                        </div> <!-- form-group// -->
+                                        <div class="form-group">
+                                            <label>Your Password</label>
+                                            <input name="PASSWORD" class="form-control" placeholder="Password" type="password">
+                                        </div> <!-- form-group// --> 
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                                        </div> <!-- form-group// --> 
+                                        <div class="form-group" id="msg">
+                                        </div>
+                                    </form>
+                        </article>
+                    </div> <!-- card.// -->
+
+	</div> <!-- col.// -->
+	<div class="col-sm-4">
+                    <div class="card">
+                        <article class="card-body">
+                            <a href="tsignup.jsp?" class="float-right btn btn-outline-primary">Sign up</a>
+                                <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                                <h2>STAFF LOGIN</h2>
+                                    <form name="teacherlogin" action="teacherlogin.jsp?t=2" onsubmit="return fun3()" method=post>
+                                        <div class="form-group">
+                                            <label>Your Username</label>
+                                                <input name="Name" class="form-control" placeholder="Username">
+                                        </div> <!-- form-group// -->
+                                        <div class="form-group">
+                                            
+                                            <label>Your Password</label>
+                                            <input name="PASSWORD" class="form-control" placeholder="Password" type="password">
+                                        </div> <!-- form-group// --> 
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                                        </div> <!-- form-group// -->                                                           
+                                    </form>
+                        </article>
+                    </div> <!-- card.// -->
+
+	</div> <!-- col.// -->
+        <div class="col-sm-4">
+                    <div class="card">
+                        <article class="card-body">
+                            
+                                <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                                <h2>ADMIN LOGIN</h2>
+                                    <form name="adminlogin" action="adminlogin.jsp?t=2" onsubmit="return fun3()" method=post>
+                                        <div class="form-group">
+                                            <label>Your Username</label>
+                                                <input name="Name" class="form-control" placeholder="Username">
+                                        </div> <!-- form-group// -->
+                                        <div class="form-group">
+                                            
+                                            <label>Your Password</label>
+                                            <input name="PASSWORD" class="form-control" placeholder="Password" type="password">
+                                        </div> <!-- form-group// --> 
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+                                        </div> <!-- form-group// -->                                                           
+                                    </form>
+                        </article>
+                    </div> <!-- card.// -->
+
+	</div> <!-- col.// -->
+</div> <!-- row.// -->
+
+</div> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+<footer class="page-footer font-white pt-4 fixed-bottom">
+            <div class="footer-copyright text-center py-3" style="color: white"> 2020 Copyright: Dhanish Ahmed
+        </div>
+        </footer>
+    </body>
+    
+</html>
